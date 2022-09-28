@@ -1,0 +1,298 @@
+* {
+   font-family: "Noto Sans KR", sans-serif;
+}
+body {
+   background-color: rgba(234, 232, 254, 1);
+}
+h1 > img {
+   display: block;
+   width: 386px;
+   height: 180px;
+   margin: 0 auto 68px;
+}
+.wrapper {
+   display: flex;
+   flex-direction: row;
+   margin: 0px auto 171px;
+   width: 748px;
+}
+.vending-machine {
+   width: 360px;
+   height: 545px;
+   box-sizing: border-box;
+   padding: 31px 27px 28px 27px;
+   background-color: rgba(255, 255, 255, 1);
+}
+.list-menu {
+   height: 272px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-content: space-between;
+}
+.list-cola:hover {
+   outline: 3px solid #6327fe;
+   border-radius: 10px;
+}
+
+.btn-menu {
+   width: 94px;
+   height: 130px;
+   background-color: #fff;
+   filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
+   border-radius: 10px;
+   cursor: pointer;
+   border: none;
+   padding-top: 11px;
+   padding-bottom: 9px;
+}
+.btn-menu.sold-out::before {
+   content: " ";
+   position: absolute;
+   inset: 0;
+   background-color: rgba(0, 0, 0, 0.8);
+   border-radius: 10px;
+}
+.btn-menu.sold-out::after {
+   content: " ";
+   position: absolute;
+   inset: 0;
+   background: no-repeat center/ 80% url(./mediaquery/Sold-out.png);
+}
+
+.img-menu {
+   width: 36px;
+   height: 65px;
+   margin-bottom: 6px;
+}
+.menu-name {
+   display: block;
+   font-size: 9px;
+   line-height: 13px;
+   margin-bottom: 3px;
+}
+.menu-price {
+   width: 70px;
+   height: 22px;
+   font-size: 12px;
+   line-height: 12px;
+   padding: 5px 16px 5px 15px;
+   background-color: #6327fe;
+   border-radius: 50px;
+   color: #fff;
+   margin-bottom: 9px;
+   box-sizing: border-box;
+   display: block;
+   margin: 0 auto;
+}
+.cont-calculation {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: 20px;
+}
+.balance {
+   width: 200px;
+   height: 33px;
+   background-color: #eae8fe;
+   border: none;
+   border-radius: 5px;
+   margin-right: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 10px 0;
+   box-sizing: border-box;
+   font-size: 14px;
+   line-height: 20px;
+}
+/* 왜 크기가 변하지?? 오 된듯 */
+.btn-change {
+   box-sizing: border-box;
+   width: 94px;
+   height: 32px;
+   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+   border-radius: 5px;
+   font-size: 13px;
+   line-height: 19px;
+   background-color: rgba(255, 255, 255, 1);
+   border: none;
+   cursor: pointer;
+}
+.cont-deposit {
+   margin-top: 11px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.inp-deposit {
+   box-sizing: border-box;
+   width: 200px;
+   height: 33px;
+   border: 1px solid #bdbdbd;
+   border-radius: 5px;
+   padding-left: 6px;
+   font-size: 13px;
+   color: #bdbdbd;
+}
+.btn-deposit {
+   width: 94px;
+   height: 32px;
+   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+   border-radius: 5px;
+   font-size: 13px;
+   line-height: 19px;
+   background-color: rgba(255, 255, 255, 1);
+   border: none;
+   cursor: pointer;
+}
+.cont-goods {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: 11px;
+}
+.list-goods {
+   width: 200px;
+   height: 106px;
+   background-color: rgba(234, 232, 254, 1);
+   border: 1px solid #bdbdbd;
+   border-radius: 5px;
+   padding: 12px;
+   box-sizing: border-box;
+   overflow-y: auto;
+}
+.list-goods::-webkit-scrollbar {
+   width: 10px;
+}
+.list-goods::-webkit-scrollbar-thumb {
+   border-radius: 50px;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: 3px solid transparent;
+}
+.btn-purchase {
+   width: 94px;
+   height: 106px;
+   font-weight: 700;
+   font-size: 13px;
+   line-height: 19px;
+   background-color: rgba(99, 39, 254, 1);
+   color: rgba(255, 255, 255, 1);
+   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+   border-radius: 5px;
+   cursor: pointer;
+}
+.btn-purchase:active {
+   background-color: #eb5757;
+}
+.cart {
+   width: 360px;
+   height: 544px;
+   margin-left: 28px;
+}
+.cont-mymoney {
+   width: 360px;
+   height: 50px;
+   background-color: #fff;
+   padding: 9px 27px;
+   box-sizing: border-box;
+   margin-bottom: 20px;
+}
+.mymoney {
+   width: 306px;
+   height: 32px;
+   font-size: 14px;
+   line-height: 20px;
+   background-color: #eae8fe;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border: none;
+   border-radius: 5px;
+   margin-right: 12px;
+   box-sizing: border-box;
+   padding: 0 10px 0;
+}
+.sum {
+   font-size: 14px;
+   line-height: 20px;
+   font-weight: 700;
+}
+.mygoods {
+   width: 360px;
+   height: 474px;
+   background-color: #fff;
+   padding: 25px 27px 52px 27px;
+   box-sizing: border-box;
+}
+.tit-mygoods {
+   display: block;
+   text-align: center;
+   font-size: 14px;
+   font-weight: 700;
+   margin-bottom: 13px;
+}
+.list-mygoods {
+   width: 306px;
+   height: 364px;
+   background-color: #eae8fe;
+   margin-bottom: 6px;
+   border: 1px solid #bdbdbd;
+   border-radius: 5px;
+   padding: 12px 18px 12px 12px;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   overflow-y: auto;
+}
+
+.list-mygoods::-webkit-scrollbar {
+   width: 10px;
+}
+.list-mygoods::-webkit-scrollbar-thumb {
+   border-radius: 50px;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: 3px solid transparent;
+}
+
+.mygoods-price {
+   float: right;
+   font-size: 12px;
+   line-height: 17px;
+}
+.mycart {
+   width: 100%;
+   height: 46px;
+   background-color: #fff;
+   border: none;
+   border-radius: 5px;
+   margin-bottom: 6px;
+   padding: 6px 8px 7px 10px;
+   box-sizing: border-box;
+   display: block;
+   position: relative;
+}
+.img-cola {
+   width: 18px;
+   height: 33px;
+   margin-right: 10px;
+}
+.txt-mygoods {
+   position: absolute;
+   font-size: 9px;
+   top: 18px;
+}
+.txt-mygoods-quantity {
+   width: 30px;
+   height: 30px;
+   border: 1px solid #bdbdbd;
+   border-radius: 5px;
+   font-size: 14px;
+   line-height: 20px;
+   float: right;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}

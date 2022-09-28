@@ -1,0 +1,18 @@
+@media (max-width: 360px) {
+   body {
+      background-color: #ffffff;
+   }
+   h1 > img {
+      width: 166px;
+      height: 71.12px;
+      margin-bottom: 0;
+   }
+
+   .wrapper {
+      display: block;
+      width: 360px;
+   }
+   .cart {
+      margin: 0px;
+   }
+}
